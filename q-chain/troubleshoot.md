@@ -5,9 +5,11 @@ Open JS console with:
 docker-compose exec testnet-validator-node geth attach /data/geth.ipc
 ```
 Then set head to some blocks before:
+``````
 debug.setHead(web3.toHex(3690000))
-
+``````
 Close the console (ctrl+d) and restart the node:
+
 docker-compose restart
 
 You may have proper peers connected to your node (check the note below).
