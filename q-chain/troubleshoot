@@ -1,8 +1,9 @@
 # For the nodes stuck at block #3,699,041 
 
 Open JS console with:
+```
 docker-compose exec testnet-validator-node geth attach /data/geth.ipc
-
+```
 Then set head to some blocks before:
 debug.setHead(web3.toHex(3690000))
 
