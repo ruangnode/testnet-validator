@@ -3,13 +3,14 @@
 #
 
 echo -e "\033[0;35m"                                                                                         
-echo " #####  #    #   ##   #    #  ####  #    #  ####  #####  ######      ####   ####  #    #     ";
-echo " #    # #    #  #  #  ##   # #    # ##   # #    # #    # #          #    # #    # ##  ##     ";
-echo " #    # #    # #    # # #  # #      # #  # #    # #    # #####      #      #    # # ## #     ";
-echo " #####  #    # ###### #  # # #  ### #  # # #    # #    # #      ### #      #    # #    #     ";
-echo " #   #  #    # #    # #   ## #    # #   ## #    # #    # #      ### #    # #    # #    #     ";
-echo " #    #  ####  #    # #    #  ####  #    #  ####  #####  ###### ###  ####   ####  #    #     ";
-echo ">>> Cosmovisor Automatic Installer for Nolus | Chain ID : nolus-rila <<<";
+echo "                                               _                            ";
+echo "  _ __ _   _  __ _ _ __   __ _ _ __   ___   __| | ___   ___ ___  _ __ ___   ";
+echo " | '__| | | |/ _` | '_ \ / _` | '_ \ / _ \ / _` |/ _ \ / __/ _ \| '_ ` _ \  ";
+echo " | |  | |_| | (_| | | | | (_| | | | | (_) | (_| |  __/| (_| (_) | | | | | | ";
+echo " |_|   \__,_|\__,_|_| |_|\__, |_| |_|\___/ \__,_|\___(_)___\___/|_| |_| |_| ";
+echo "                          __/ |                                             ";
+echo "                         |___/                                              ";
+echo "
 echo -e "\e[0m"
 
 sleep 1
@@ -44,7 +45,7 @@ source $HOME/.bash_profile
 
 # Set Vars
 if [ ! $NODENAME ]; then
-        read -p "hello@nodexcapital:~# [ENTER YOUR NODENAME] > " NODENAME
+        read -p "hello@ruangnode.com:~# [ENTER YOUR NODENAME] > " NODENAME
         echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
 fi
 echo ""
