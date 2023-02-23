@@ -5,6 +5,6 @@
 
 
 ### Automatic Installer
-You can setup your 8Ball fullnode in few minutes by using automated script below.
+You can setup your nolus fullnode in few minutes by using automated script below.
 ```
 wget -O nolus.sh https://raw.githubusercontent.com/bakkeieth/testnet-validator/main/nolus/nolus.sh && chmod +x nolus.sh && ./nolus.sh
