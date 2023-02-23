@@ -1,8 +1,8 @@
 #
-# // Copyright (C) 2022 Lukman Habibi Recoded By ruangnode.com
+# // Copyright (C) 2023 Lukman Habibi By ruangnode.com
 #
 
-echo -e "\033[0;35m"                                                                                         
+echo -e "\033[0;35m"
 echo "                                               _                            ";
 echo "  _ __ _   _  __ _ _ __   __ _ _ __   ___   __| | ___   ___ ___  _ __ ___   ";
 echo " | '__| | | |/ _` | '_ \ / _` | '_ \ / _ \ / _` |/ _ \ / __/ _ \| '_ ` _ \  ";
@@ -10,7 +10,7 @@ echo " | |  | |_| | (_| | | | | (_| | | | | (_) | (_| |  __/| (_| (_) | | | | | 
 echo " |_|   \__,_|\__,_|_| |_|\__, |_| |_|\___/ \__,_|\___(_)___\___/|_| |_| |_| ";
 echo "                          __/ |                                             ";
 echo "                         |___/                                              ";
-echo "
+echo ">>> Cosmovisor Automatic Installer for nolus | Chain ID : nolus-rila <<<";
 echo -e "\e[0m"
 
 sleep 1
@@ -109,7 +109,7 @@ pruning_keep_recent="100"
 pruning_keep_every="0"
 pruning_interval="10"
 sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/$FOLDER/config/app.toml
-sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/$FOLDER/config/app.toml       
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/$FOLDER/config/app.toml
 sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/$FOLDER/config/app.toml
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/$FOLDER/config/app.toml
 
@@ -152,3 +152,5 @@ echo -e "CHECK STATUS BINARY : \e[1m\e[35msystemctl status $BINARY\e[0m"
 echo -e "CHECK RUNNING LOGS : \e[1m\e[35mjournalctl -fu $BINARY -o cat\e[0m"
 echo -e "CHECK LOCAL STATUS : \e[1m\e[35mcurl -s localhost:${PORT}657/status | jq .result.sync_info\e[0m"
 echo ""
+
+# End
