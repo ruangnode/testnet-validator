@@ -18,9 +18,9 @@ sleep 1
 SOURCE=nibiru
 WALLET=wallet
 BINARY=nibid
-CHAIN=nibiru-testnet-2
+CHAIN=nibiru-itn-1
 FOLDER=.nibid
-VERSION=v0.16.3
+VERSION=v0.19.2
 DENOM=unibi
 COSMOVISOR=cosmovisor
 REPO=https://github.com/NibiruChain/nibiru.git
@@ -45,7 +45,7 @@ source $HOME/.bash_profile
 
 # Set Vars
 if [ ! $NODENAME ]; then
-	read -p "admin@ruangnode.com:~# [ENTER YOUR NODE] > " NODENAME
+	read -p "hello@nodexcapital:~# [ENTER YOUR NODE] > " NODENAME
 	echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
 fi
 echo ""
