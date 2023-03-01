@@ -9,7 +9,7 @@ echo " ██████  ██    ██ ███████ ██ ██ 
 echo " ██   ██ ██    ██ ██   ██ ██  ██ ██ ██    ██ ██  ██ ██ ██    ██ ██   ██ ██         ██      ██    ██ ██  ██  ██     ";
 echo " ██   ██  ██████  ██   ██ ██   ████  ██████  ██   ████  ██████  ██████  ███████ ██  ██████  ██████  ██      ██     ";
 
-echo ">>> Cosmovisor Automatic Installer for Nolus | Chain ID : mocaha <<<";
+echo ">>> Cosmovisor Automatic Installer for Nolus | Chain ID : mocha <<<";
 echo -e "\e[0m"
 
 sleep 1
@@ -92,8 +92,8 @@ curl -Ls $GENESIS > $HOME/$FOLDER/config/genesis.json
 curl -Ls $ADDRBOOK > $HOME/$FOLDER/config/addrbook.json
 
 # Set Seers and Peers
-SEEDS="3f472746f46493309650e5a033076689996c8881@celestia-testnet.rpc.kjnodes.com:20659"
-PEERS=""
+SEEDS=3f472746f46493309650e5a033076689996c8881@celestia-testnet.rpc.kjnodes.com:20659
+PEERS=
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/$FOLDER/config/config.toml
 
 # Set Port
