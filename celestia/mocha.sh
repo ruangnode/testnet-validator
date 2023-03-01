@@ -24,8 +24,8 @@ VERSION=v0.11.0
 DENOM=utia
 COSMOVISOR=cosmovisor
 REPO=https://github.com/celestiaorg/celestia-app.git
-GENESIS=https://snapshots.polkachu.com/testnet-genesis/celestia/genesis.json
-ADDRBOOK=https://snapshots.polkachu.com/testnet-addrbook/celestia/addrbook.json
+GENESIS=https://snapshots.kjnodes.com/celestia-testnet/genesis.json
+ADDRBOOK=https://snapshots.kjnodes.com/celestia-testnet/addrbook.json
 PORT=16
 
 echo "export WALLET=${WALLET}" >> $HOME/.bash_profile
@@ -43,7 +43,7 @@ source $HOME/.bash_profile
 
 # Set Vars
 if [ ! $NODENAME ]; then
-        read -p "admin@ruangnode:~# [ENTER YOUR NODE] > " NODENAME
+        read -p "admin@ruangnode.com:~# [ENTER YOUR NODE] > " NODENAME
         echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
 fi
 echo ""
@@ -92,7 +92,7 @@ curl -Ls $GENESIS > $HOME/$FOLDER/config/genesis.json
 curl -Ls $ADDRBOOK > $HOME/$FOLDER/config/addrbook.json
 
 # Set Seers and Peers
-SEEDS=ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:11656
+SEEDS=3f472746f46493309650e5a033076689996c8881@celestia-testnet.rpc.kjnodes.com:20659
 PEERS=3f4355f8c072b6ce3966af81af61ff1c8cf05cfa@65.108.158.250:26656,614e6d0aa9e7a19a9c848fb309cfb295a91b1add@95.216.102.235:26656,eb64c08c62219e55743cb9e395d73fe2ca8d486a@89.58.47.76:26656,858c45dd84f96631ed0ee1d0f717f8b51aaee19f@217.76.53.181:26656,1eaec90139d37c1beabdc1aa156125c22457dc6f@91.107.152.98:26656,078463a61c4298857ecb454a93f614d09eb6b1e4@5.78.61.11:26656,b03b9d03cf3f523b9cbbe08bf52ac97c648fbf37@109.205.183.222:26656,368dadf0a3b279fa40757b5839a61a61b16cbfd1@91.223.236.183:26656,ec0e55dc50b1747ad0df85b84b49016411194005@91.107.140.88:26656,3025feace255ba0e7aab053ab63a7a97d515efef@5.161.137.180:26656,ccf6fc804b9f615460758f6be476d39bce3375e7@5.161.147.249:26656,16908a5ac3cff7448d25a10a6f7028c523f7be26@185.135.137.224:26661
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/$FOLDER/config/config.toml
 
