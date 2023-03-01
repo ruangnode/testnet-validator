@@ -15,10 +15,10 @@ echo -e "\e[0m"
 sleep 1
 
 # Variable
-SOURCE=celestia-app
+SOURCE=celestia-node
 WALLET=wallet
-BINARY=celestia-appd
-FOLDER=.celestia-app
+BINARY=celestia-noded
+FOLDER=.celestia-node
 CHAIN=mocha
 VERSION=v0.11.0
 DENOM=utia
